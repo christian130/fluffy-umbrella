@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="Canvas.js"></script>
+    <script src="Cursor.js"></script>
+    <script src="Cmd.js"></script>
+    <script src="Client.js"></script>
+    <script src="Board.js"></script>
+    <script src="GameControl.js"></script>
+  </head>
+  <body>
+    <p id="connectServer">game server may be full or offline.</p>
+
+    <div id="chooseColor">
+      <p>Let's play game five-chess-in-a-row.</p>
+      <input type="radio" name="color" id="useBlack"
+             onclick="useBlackOnClick()">I use BLACK chess</input>
+      <input type="radio" name="color" id="useWhite"
+             onclick="useWhiteOnClick()">I use WHITE chess</input>
+      <button id="startGame" onclick="startGameOnClick()">start game</button>
+      <p id="errMsg">please choose chess color</p>
+    </div>
+
+    <div id="playChess">
+      <canvas id="canvas"></canvas>
+      <div id="cursor">X</div>
+      <div id="text"></div>
+    </div>
+  </body>
+</html>
