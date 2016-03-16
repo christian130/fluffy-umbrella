@@ -1,0 +1,34 @@
+#connectServer {
+  color: red;
+}
+
+#chooseColor {
+  display: none;
+}
+
+#errMsg {
+  color: red;
+  display: none;
+}
+
+#playChess {
+  display: none;
+}
+
+#canvas {
+  clear: left;
+  position: absolute;
+  border: 1px solid;
+}
+
+#text {
+  float: right;
+}
+
+#cursor {
+  float: left;
+  position: relative;
+  pointer-events: none;
+  display: inline;
+  color: red;
+}
